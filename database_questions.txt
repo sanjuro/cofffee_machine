@@ -1,0 +1,35 @@
+Database Questions
+
+1. 	SELECT cmm.* FROM coffee_machine_models cmm
+	LEFT JOIN models_products mp ON cmm.id = mp.model_id
+	WHERE mp.product_id = 3;
+
+2.	SELECT cm.*
+	FROM coffee_machines cm
+	LEFT JOIN coffee_machine_models cmm ON cm.model_id = cmm.id
+	WHERE 
+		(
+			cm.coffee = ( cmm.coffee_cap * 10 / 100 ) OR
+			cm.water = ( cmm.water_cap * 10 / 100 ) OR
+			cm.milk = ( cmm.milk_cap * 10 / 100 )
+		)
+
+3.  SELECT cmm.*, IF(SUM(mp.product_id = 3), "yes", "no") as can_make_latte 
+	FROM coffee_machine_models cmm
+	LEFT JOIN models_products mp ON cmm.id = mp.model_id
+	GROUP BY cmm.id;
+
+4.	SELECT cm.*, GROUP_CONCAT(p.name) As products
+	FROM coffee_machines cm
+	LEFT JOIN coffee_machine_models cmm ON cm.model_id = cmm.id
+	LEFT JOIN models_products mp ON cmm.id = mp.model_id
+	LEFT JOIN products p on mp.product_id = p.id
+	GROUP BY cm.id;
+
+5.	SELECT cmm.*, COUNT( mp.product_id) as count_products
+	FROM coffee_machine_models cmm
+	LEFT JOIN models_products mp ON cmm.id = mp.model_id
+	GROUP BY cmm.id
+	having COUNT( mp.product_id) = 1;
+
+6.	
