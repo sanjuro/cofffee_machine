@@ -18,26 +18,7 @@ Assumptions
 Installation
 ------------
 
-    cd my/project/dir
-    git clone git://github.com/sanjuro/ambition
-    cd ambition
-    php composer.phar self-update
-    php composer.phar install
-    Run the data/ambition_2014-02-26.sql, this will setup your DB.
-    Update the ZF install and up the configs with your DB credentials.
-
-
-Web Server Setup
-----------------
-
-### PHP CLI Server
-
-
-	cd my/project/ <-- must be in this directory
-    php -S 127.0.0.1:8000
-
-This will start the cli-server on port 8000, and bind it to all network
-interfaces.
-
-
-Open a Browser and goto http://127.0.0.1:8000/makecoffee.php
+    git clone git://github.com/sanjuro/cofffee_machine
+    cd cofffee_machine
+    Run php -S 127.0.0.1:8000
+    Open a Browser and goto http://127.0.0.1:8000/makecoffee.php
