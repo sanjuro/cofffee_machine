@@ -15,8 +15,10 @@ if(!isset($_SESSION['coffeeMachine']) || empty($_SESSION['coffeeMachine'])){
 if(isset($_GET['do'])){
  	if($_GET['do'] == 'espresso'){
  		$coffeeMachine->makeEspresso();
+ 		$message  = 'Made Espresso';
  	}elseif ($_GET['do'] == 'double_espresso'){
  		$coffeeMachine->makeDoubleEspresso();
+ 		$message  = 'Made Double Espresso';
  	}elseif ($_GET['do'] == 'latte'){
  		$coffeeMachine->makeLatte();
  	}elseif ($_GET['do'] == 'refill'){
@@ -31,7 +33,7 @@ if(isset($_GET['do'])){
  	
  	$_SESSION['coffeeMachine'] = $coffeeMachine;
 }
-print_r($_SESSION['coffeeMachine']);
+// print_r($_SESSION['coffeeMachine']);
 ?>
 <!DOCTYPE HTML>
 

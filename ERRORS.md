@@ -13,7 +13,9 @@ Databaes
 1. In the product table, the values are incorrectly set. If you refer to the base specification, you will see that:
 
 Espresso - 1 Coffee, 0.05l water, 0.0L milk 
+
 Double Espresso - 2 Coffee, 0.1l water, 0.0L milk 
+
 Late - 2 Coffee, 0.1l water, 0.3L milk 
 
 Also if a single espresso takes 0,05l water to make then a double espresso should theoritically need twice as much water and twice as much coffee.
