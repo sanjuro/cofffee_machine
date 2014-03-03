@@ -1,11 +1,14 @@
 Errors
+===============
 
 PHP/OOP
+------------
 
 1. The capacity list for the VT­1100 Machine is incorrect, this machine can make Lattes and so will require milk
 capactiy. It is stated as not having a milk capacity.
 
 Databaes
+------------
 
 1. In the product table, the values are incorrectly set. If you refer to the base specification, you will see that:
 
