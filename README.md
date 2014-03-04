@@ -9,6 +9,8 @@ Answers 1 - 6 of the PHP / OOP sections are found in the Lib folder and the make
 
 Ansers to the DB questions are in the file named database_questions.php.
 
+This has been tested on Firefox 27.0
+
 Assumptions
 ------------
 
