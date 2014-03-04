@@ -263,7 +263,7 @@ abstract class CoffeeMachine
         }
 
     	$howManyCupsLeft = $this->brew(1,0.05);
-    	return "I made a Espresso and you can make $howManyCupsLeft more";
+    	return "I made an Espresso and you can make $howManyCupsLeft more";
     }
 
     /**

@@ -32,7 +32,7 @@ class SmallCoffeeMachineTest extends PHPUnit_Framework_TestCase
     $machineMessage = $coffeeMachine->makeEspresso();
     $cupsLeft = $coffeeMachine->howManyCoffeesLeft();
 
-    $this->assertEquals("I made a Espresso and you can make $cupsLeft more", $machineMessage);
+    $this->assertEquals("I made an Espresso and you can make $cupsLeft more", $machineMessage);
   } 
 
   /**

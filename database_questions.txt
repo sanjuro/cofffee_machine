@@ -32,4 +32,7 @@ Database Questions
 	GROUP BY cmm.id
 	having COUNT( mp.product_id) = 1;
 
-6.	
+6.	I would add indexes on the following:
+	Table: model_product, Columns: model_id
+	Table: model_product, Columns: product_id
+	Table: coffee_machine, Columns: model_id

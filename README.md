@@ -3,7 +3,11 @@ Cofffee Machine
 
 Introduction
 ------------
-This is a simple coffee machine
+This is a simple coffee machine. 
+
+Answers 1 - 6 of the PHP / OOP sections are found in the Lib folder and the makecoffee.php file.
+
+Ansers to the DB questions are in the file named database_questions.php.
 
 Assumptions
 ------------
